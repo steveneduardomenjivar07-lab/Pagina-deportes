@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery | FutbolManía</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        ⚽ FUTBOL<span>MANÍA</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+        <a href="json.html">JSON</a>
+        <a href="hosting.html">Hosting</a>
+        <a href="cuestionario.html">Quiz</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="mini-title">⚡ BIBLIOTECA JAVASCRIPT</p>
+
+        <h1>
+            JQUERY
+            <span>FÁCIL Y RÁPIDO</span>
+        </h1>
+
+        <p>
+            jQuery es una biblioteca de JavaScript que facilita
+            la creación de efectos, eventos y animaciones.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="intro">
+
+    <p class="section-tag">JQUERY</p>
+
+    <h2>¿Qué es jQuery?</h2>
+
+    <p class="description">
+        jQuery fue creado para simplificar el trabajo con JavaScript
+        y facilitar la creación de páginas web interactivas.
+    </p>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">⚡</div>
+
+            <h3>FÁCIL</h3>
+
+            <p>
+                Su sintaxis permite escribir código de manera sencilla.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🎬</div>
+
+            <h3>EFECTOS</h3>
+
+            <p>
+                Permite crear animaciones y efectos visuales.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💻</div>
+
+            <h3>JAVASCRIPT</h3>
+
+            <p>
+                jQuery está basado en JavaScript.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="producto">
+
+    <div class="producto-info">
+
+        <p class="section-tag">SINTAXIS</p>
+
+        <h2>El símbolo $</h2>
+
+        <p>
+            jQuery utiliza el símbolo $ para seleccionar
+            elementos de una página y trabajar con ellos.
+        </p>
+
+        <pre style="
+            background:#020806;
+            padding:25px;
+            border-radius:12px;
+            color:#20d68b;
+            overflow:auto;
+        "><code>
+$("#mensaje").hide();
+        </code></pre>
+
+    </div>
+
+
+    <div class="producto-info">
+
+        <p class="section-tag">ANIMACIÓN</p>
+
+        <h2>Ejemplo interactivo</h2>
+
+        <div id="pelota" style="
+            font-size:80px;
+            text-align:center;
+            margin:30px;
+        ">
+            ⚽
+        </div>
+
+        <button id="boton" class="btn"
+        style="border:none; cursor:pointer;">
+            MOSTRAR / OCULTAR ⚽
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="intro">
+
+    <p class="section-tag">COMPARACIÓN</p>
+
+    <h2>jQuery vs JavaScript</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>JAVASCRIPT</h3>
+
+            <p>
+                Puede realizar las mismas funciones
+                utilizando código moderno.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>JQUERY</h3>
+
+            <p>
+                Puede simplificar algunas tareas
+                y utilizar menos código.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="logo">
+        ⚽ FUTBOL<span>MANÍA</span>
+    </div>
+
+    <p>Proyecto de Desarrollo Web © 2026</p>
+
+</footer>
+
+
+<script>
+
+$(document).ready(function(){
+
+    $("#boton").click(function(){
+
+        $("#pelota").slideToggle();
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

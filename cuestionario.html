@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutbolManía | Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .quiz-container {
+            max-width: 900px;
+            margin: 140px auto 60px;
+            padding: 30px;
+        }
+
+        .quiz-title {
+            text-align: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 60px;
+            color: #20d68b;
+            margin-bottom: 10px;
+        }
+
+        .quiz-subtitle {
+            text-align: center;
+            color: white;
+            margin-bottom: 35px;
+        }
+
+        .pregunta {
+            background: rgba(16, 24, 32, 0.95);
+            border: 1px solid rgba(32, 214, 139, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.25);
+        }
+
+        .pregunta h3 {
+            color: white;
+            margin-bottom: 18px;
+        }
+
+        .opcion {
+            display: block;
+            background: #111c18;
+            color: #ddd;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .opcion:hover {
+            background: #19382d;
+            transform: translateX(5px);
+        }
+
+        .opcion input {
+            margin-right: 10px;
+        }
+
+        .btn-quiz {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 35px;
+            background: #20d68b;
+            color: #07120e;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .btn-quiz:hover {
+            transform: scale(1.05);
+            background: #16a085;
+            color: white;
+        }
+
+        #resultado {
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            background: #101820;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            display: none;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        ⚽ FUTBOL<span>MANÍA</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+        <a href="json.html">JSON</a>
+        <a href="hosting.html">Hosting</a>
+        <a href="cuestionario.html">Quiz</a>
+    </nav>
+</header>
+
+<section class="quiz-container">
+
+    <h1 class="quiz-title">⚽ QUIZ FUTBOLMANÍA</h1>
+
+    <p class="quiz-subtitle">
+        Demuestra cuánto aprendiste sobre desarrollo web.
+    </p>
+
+    <form id="quizForm">
+
+        <div class="pregunta">
+            <h3>1. ¿Para qué sirve JavaScript?</h3>
+
+            <label class="opcion">
+                <input type="radio" name="p1" value="a">
+                Crear la estructura de una página
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p1" value="b">
+                Agregar interactividad
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p1" value="c">
+                Guardar imágenes
+            </label>
+        </div>
+
+        <div class="pregunta">
+            <h3>2. ¿Qué lenguaje crea la estructura de una página web?</h3>
+
+            <label class="opcion">
+                <input type="radio" name="p2" value="a">
+                HTML
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p2" value="b">
+                JSON
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p2" value="c">
+                JavaScript
+            </label>
+        </div>
+
+        <div class="pregunta">
+            <h3>3. ¿Qué es jQuery?</h3>
+
+            <label class="opcion">
+                <input type="radio" name="p3" value="a">
+                Un navegador
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p3" value="b">
+                Una librería de JavaScript
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p3" value="c">
+                Un dominio
+            </label>
+        </div>
+
+        <div class="pregunta">
+            <h3>4. ¿Qué significa JSON?</h3>
+
+            <label class="opcion">
+                <input type="radio" name="p4" value="a">
+                JavaScript Object Notation
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p4" value="b">
+                Java System Online Network
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p4" value="c">
+                Java Server Object Name
+            </label>
+        </div>
+
+        <div class="pregunta">
+            <h3>5. ¿Qué es un Web Hosting?</h3>
+
+            <label class="opcion">
+                <input type="radio" name="p5" value="a">
+                Un programa para editar fotos
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p5" value="b">
+                Un servicio que almacena un sitio web
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p5" value="c">
+                Un lenguaje de programación
+            </label>
+        </div>
+
+        <div class="pregunta">
+            <h3>6. ¿Para qué sirve Vercel?</h3>
+
+            <label class="opcion">
+                <input type="radio" name="p6" value="a">
+                Publicar proyectos web
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p6" value="b">
+                Crear videojuegos físicos
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p6" value="c">
+                Editar fotografías
+            </label>
+        </div>
+
+        <div class="pregunta">
+            <h3>7. ¿Qué es un dominio?</h3>
+
+            <label class="opcion">
+                <input type="radio" name="p7" value="a">
+                El nombre de un sitio web
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p7" value="b">
+                Una imagen
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p7" value="c">
+                Una base de datos
+            </label>
+        </div>
+
+        <div class="pregunta">
+            <h3>8. ¿Qué hace el DNS?</h3>
+
+            <label class="opcion">
+                <input type="radio" name="p8" value="a">
+                Cambia el diseño
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p8" value="b">
+                Relaciona un dominio con una dirección de servidor
+            </label>
+
+            <label class="opcion">
+                <input type="radio" name="p8" value="c">
+                Crea videos
+            </label>
+        </div>
+
+        <button type="button" class="btn-quiz" onclick="calificarQuiz()">
+            ⚽ VER RESULTADO
+        </button>
+
+    </form>
+
+    <div id="resultado"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
