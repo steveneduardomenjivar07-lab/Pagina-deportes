@@ -1,62 +1,60 @@
-function calificarQuiz() {
+/* =====================================
+   MODO OSCURO / MODO CLARO
+===================================== */
 
-    let respuestas = {
-        p1: "b",
-        p2: "a",
-        p3: "b",
-        p4: "a",
-        p5: "b",
-        p6: "a",
-        p7: "a",
-        p8: "b"
-    };
+const themeToggle = document.getElementById("themeToggle");
 
-    let puntos = 0;
-    let contestadas = 0;
 
-    for (let pregunta in respuestas) {
+/* Comprobar si existe el botón */
 
-        let seleccion = document.querySelector(
-            'input[name="' + pregunta + '"]:checked'
+if (themeToggle) {
+
+    themeToggle.addEventListener("click", function () {
+
+        /* Cambiar clase del body */
+
+        document.body.classList.toggle("light-mode");
+
+
+        /* Cambiar texto del botón */
+
+        if (document.body.classList.contains("light-mode")) {
+
+            themeToggle.textContent = "🌙 Oscuro";
+
+        } else {
+
+            themeToggle.textContent = "☀️ Claro";
+
+        }
+
+    });
+
+}
+
+
+/* =====================================
+   ANIMACIÓN SUAVE
+===================================== */
+
+document.querySelectorAll('a[href^="#"]').forEach(function (enlace) {
+
+    enlace.addEventListener("click", function (evento) {
+
+        const destino = document.querySelector(
+            this.getAttribute("href")
         );
 
-        if (seleccion) {
-            contestadas++;
+        if (destino) {
 
-            if (seleccion.value === respuestas[pregunta]) {
-                puntos++;
-            }
+            evento.preventDefault();
+
+            destino.scrollIntoView({
+                behavior: "smooth"
+            });
+
         }
-    }
 
-    let porcentaje = (puntos / 8) * 100;
-
-    let mensaje = "";
-
-    if (puntos === 8) {
-        mensaje = "🏆 ¡EXCELENTE! Eres un campeón del desarrollo web.";
-    } 
-    else if (puntos >= 6) {
-        mensaje = "⚽ ¡MUY BIEN! Tienes buenos conocimientos.";
-    } 
-    else if (puntos >= 4) {
-        mensaje = "👍 ¡BIEN! Pero puedes seguir repasando.";
-    } 
-    else {
-        mensaje = "📚 Sigue estudiando y vuelve a intentarlo.";
-    }
-
-    let resultado = document.getElementById("resultado");
-
-    resultado.innerHTML =
-        "⚽ RESULTADO<br><br>" +
-        puntos + " / 8 respuestas correctas<br>" +
-        porcentaje + "%<br><br>" +
-        mensaje;
-
-    resultado.style.display = "block";
-
-    resultado.scrollIntoView({
-        behavior: "smooth"
     });
-}
+
+});
