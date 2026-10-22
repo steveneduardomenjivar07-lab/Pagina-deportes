@@ -20,43 +20,43 @@
             text-align: center;
             font-family: 'Bebas Neue', sans-serif;
             font-size: 60px;
-            color: #20d68b;
+            color: var(--green);
             margin-bottom: 10px;
         }
 
         .quiz-subtitle {
             text-align: center;
-            color: white;
+            color: var(--muted);
             margin-bottom: 35px;
         }
 
         .pregunta {
-            background: rgba(16, 24, 32, 0.95);
-            border: 1px solid rgba(32, 214, 139, 0.3);
-            border-radius: 15px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 4px;
             padding: 25px;
             margin-bottom: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,.25);
         }
 
         .pregunta h3 {
-            color: white;
+            color: var(--text);
             margin-bottom: 18px;
         }
 
         .opcion {
             display: block;
-            background: #111c18;
-            color: #ddd;
+            background: var(--bg);
+            color: var(--text);
             padding: 12px 15px;
             margin: 10px 0;
-            border-radius: 10px;
+            border-radius: 4px;
             cursor: pointer;
             transition: .3s;
         }
 
         .opcion:hover {
-            background: #19382d;
+            background: var(--surface);
             transform: translateX(5px);
         }
 
@@ -68,7 +68,7 @@
             display: block;
             margin: 30px auto;
             padding: 15px 35px;
-            background: #20d68b;
+            background: var(--green);
             color: #07120e;
             border: none;
             border-radius: 30px;
@@ -80,7 +80,7 @@
 
         .btn-quiz:hover {
             transform: scale(1.05);
-            background: #16a085;
+            background: var(--green-dark);
             color: white;
         }
 
@@ -88,8 +88,8 @@
             text-align: center;
             padding: 25px;
             border-radius: 15px;
-            background: #101820;
-            color: white;
+            background: var(--surface);
+            color: var(--text);
             font-size: 22px;
             font-weight: bold;
             display: none;
@@ -113,6 +113,8 @@
         <a href="hosting.html">Hosting</a>
         <a href="cuestionario.html">Quiz</a>
     </nav>
+    <button class="icon-btn" id="languageBtn" type="button" aria-label="Cambiar idioma">EN</button>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema">☀</button>
 </header>
 
 <section class="quiz-container">

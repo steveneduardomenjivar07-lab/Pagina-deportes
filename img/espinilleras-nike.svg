@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Espinilleras Nike negras</title>
+  <desc id="description">Par de espinilleras negras con detalles blancos y verdes.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#26352c"/>
+      <stop offset="1" stop-color="#0b1510"/>
+    </linearGradient>
+    <linearGradient id="guard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#343d39"/>
+      <stop offset=".5" stop-color="#101512"/>
+      <stop offset="1" stop-color="#252c28"/>
+    </linearGradient>
+    <filter id="shadow" x="-.3" y="-.2" width="1.6" height="1.6">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="11"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".4"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#background)"/>
+  <circle cx="400" cy="300" r="260" fill="#19e879" opacity=".06"/>
+  <g filter="url(#shadow)" stroke-linejoin="round">
+    <g transform="translate(155 76) rotate(-8 120 220)">
+      <path d="M84 28 Q120 4 156 28 L205 90 Q220 112 214 147 L183 430 Q178 476 120 500 Q62 476 57 430 L26 147 Q20 112 35 90 Z" fill="url(#guard)" stroke="#77837b" stroke-width="5"/>
+      <path d="M54 106 Q120 133 186 106 M43 165 Q120 194 197 165 M31 226 Q120 255 209 226" fill="none" stroke="#19e879" stroke-width="8" opacity=".85"/>
+      <path d="M70 300 Q120 276 170 300 L155 405 Q120 433 85 405 Z" fill="#080d0a" stroke="#59635d" stroke-width="4"/>
+      <text x="120" y="360" fill="#f5fff8" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle" letter-spacing="3">NIKE</text>
+    </g>
+    <g transform="translate(455 76) rotate(8 120 220)">
+      <path d="M84 28 Q120 4 156 28 L205 90 Q220 112 214 147 L183 430 Q178 476 120 500 Q62 476 57 430 L26 147 Q20 112 35 90 Z" fill="url(#guard)" stroke="#77837b" stroke-width="5"/>
+      <path d="M54 106 Q120 133 186 106 M43 165 Q120 194 197 165 M31 226 Q120 255 209 226" fill="none" stroke="#19e879" stroke-width="8" opacity=".85"/>
+      <path d="M70 300 Q120 276 170 300 L155 405 Q120 433 85 405 Z" fill="#080d0a" stroke="#59635d" stroke-width="4"/>
+      <text x="120" y="360" fill="#f5fff8" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle" letter-spacing="3">NIKE</text>
+    </g>
+  </g>
+  <text x="400" y="560" fill="#b5c5ba" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="5">SOCCER PROTECTION</text>
+</svg>

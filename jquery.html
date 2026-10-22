@@ -1,226 +1,132 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery | FutbolManía</title>
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Investigación sobre jQuery y su aplicación en páginas web deportivas.">
+  <meta name="theme-color" content="#07110d">
+  <title>jQuery | FUTBOLMANÍA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="header">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">⚽</span>
+      <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+    </a>
 
-    <div class="logo">
-        ⚽ FUTBOL<span>MANÍA</span>
-    </div>
-
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="javascript.html">JavaScript</a>
-        <a href="jquery.html">jQuery</a>
-        <a href="json.html">JSON</a>
-        <a href="hosting.html">Hosting</a>
-        <a href="cuestionario.html">Quiz</a>
+    <nav class="nav-links" id="mainNav" aria-label="Navegación principal">
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="javascript.html">JavaScript</a>
+      <a href="jquery.html">jQuery</a>
+      <a href="json.html">JSON</a>
+      <a href="hosting.html" data-es="Hosting" data-en="Hosting">Hosting</a>
+      <a href="cuestionario.html" data-es="Cuestionario" data-en="Quiz">Cuestionario</a>
     </nav>
 
+    <div class="nav-actions">
+      <button class="icon-btn" id="languageBtn" type="button" aria-label="Cambiar idioma">EN</button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema">☀</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
 </header>
 
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <p class="mini-title">⚡ BIBLIOTECA JAVASCRIPT</p>
-
-        <h1>
-            JQUERY
-            <span>FÁCIL Y RÁPIDO</span>
-        </h1>
-
-        <p>
-            jQuery es una biblioteca de JavaScript que facilita
-            la creación de efectos, eventos y animaciones.
-        </p>
-
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">02 / EFECTOS E INTERACCIÓN</span>
+      <h1>jQuery: <span class="accent">MENOS CÓDIGO</span>, MÁS ACCIÓN</h1>
+      <p>jQuery es una biblioteca de JavaScript que facilita la selección y manipulación de elementos HTML, la gestión de eventos, los efectos visuales y algunas solicitudes de datos.</p>
     </div>
+  </section>
 
-</section>
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        <h2>¿Qué es jQuery?</h2>
+        <p>jQuery permite realizar tareas comunes de JavaScript mediante una sintaxis más breve. Fue especialmente popular para simplificar la compatibilidad entre navegadores y crear efectos en sitios web.</p>
 
+        <h2>¿Para qué sirve?</h2>
+        <ul>
+          <li>Seleccionar elementos HTML.</li>
+          <li>Responder a eventos, como los clics.</li>
+          <li>Mostrar y ocultar contenido.</li>
+          <li>Agregar o quitar clases CSS.</li>
+          <li>Realizar solicitudes de datos cuando el proyecto lo necesita.</li>
+        </ul>
 
-<section class="intro">
+        <h2>Ejemplo aplicado a FUTBOLMANÍA</h2>
+        <p>El siguiente ejemplo permite mostrar u ocultar una noticia deportiva al presionar un botón.</p>
 
-    <p class="section-tag">JQUERY</p>
+        <pre><code>$('#botonNoticia').on('click', function () {
+  $('#noticia').slideToggle();
+});</code></pre>
 
-    <h2>¿Qué es jQuery?</h2>
-
-    <p class="description">
-        jQuery fue creado para simplificar el trabajo con JavaScript
-        y facilitar la creación de páginas web interactivas.
-    </p>
-
-
-    <div class="cards">
-
-        <div class="card">
-
-            <div class="icon">⚡</div>
-
-            <h3>FÁCIL</h3>
-
-            <p>
-                Su sintaxis permite escribir código de manera sencilla.
-            </p>
-
+        <div class="notice">
+          Este ejemplo utiliza jQuery. Debes cargar la biblioteca y crear en HTML los elementos con los identificadores indicados.
         </div>
-
-
-        <div class="card">
-
-            <div class="icon">🎬</div>
-
-            <h3>EFECTOS</h3>
-
-            <p>
-                Permite crear animaciones y efectos visuales.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">💻</div>
-
-            <h3>JAVASCRIPT</h3>
-
-            <p>
-                jQuery está basado en JavaScript.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="producto">
-
-    <div class="producto-info">
-
-        <p class="section-tag">SINTAXIS</p>
-
-        <h2>El símbolo $</h2>
-
-        <p>
-            jQuery utiliza el símbolo $ para seleccionar
-            elementos de una página y trabajar con ellos.
-        </p>
-
-        <pre style="
-            background:#020806;
-            padding:25px;
-            border-radius:12px;
-            color:#20d68b;
-            overflow:auto;
-        "><code>
-$("#mensaje").hide();
-        </code></pre>
-
-    </div>
-
-
-    <div class="producto-info">
-
-        <p class="section-tag">ANIMACIÓN</p>
 
         <h2>Ejemplo interactivo</h2>
+        <div class="demo-box">
+          <button class="btn btn-primary" id="demoJqueryBtn" type="button">Mostrar / ocultar noticia</button>
 
-        <div id="pelota" style="
-            font-size:80px;
-            text-align:center;
-            margin:30px;
-        ">
-            ⚽
+          <div class="demo-message" id="demoJqueryMessage">
+            <strong>NOTICIA DEPORTIVA</strong>
+            <p>¡El fútbol une a millones de aficionados alrededor del mundo!</p>
+          </div>
         </div>
+      </article>
 
-        <button id="boton" class="btn"
-        style="border:none; cursor:pointer;">
-            MOSTRAR / OCULTAR ⚽
-        </button>
+      <aside class="side-panel">
+        <span class="tag">RESUMEN</span>
+        <h3>Ventajas de jQuery</h3>
+        <ul>
+          <li>Sintaxis sencilla para tareas comunes.</li>
+          <li>Permite trabajar con eventos y efectos.</li>
+          <li>Facilita la manipulación del DOM.</li>
+        </ul>
 
+        <h3>¿jQuery o JavaScript?</h3>
+        <p>JavaScript es el lenguaje de programación. jQuery es una biblioteca construida sobre JavaScript. Para muchos proyectos modernos, JavaScript puro también puede realizar estas tareas sin instalar una biblioteca adicional.</p>
+
+        <a class="btn btn-primary" href="json.html">Siguiente: JSON →</a>
+      </aside>
     </div>
+  </section>
+</main>
 
-</section>
-
-
-<section class="intro">
-
-    <p class="section-tag">COMPARACIÓN</p>
-
-    <h2>jQuery vs JavaScript</h2>
-
-    <div class="cards">
-
-        <div class="card">
-
-            <h3>JAVASCRIPT</h3>
-
-            <p>
-                Puede realizar las mismas funciones
-                utilizando código moderno.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>JQUERY</h3>
-
-            <p>
-                Puede simplificar algunas tareas
-                y utilizar menos código.
-            </p>
-
-        </div>
-
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⚽</span>
+        <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+      </a>
+      <p>Fútbol, tecnología y pasión por el juego.</p>
     </div>
-
-</section>
-
-
-<footer>
-
-    <div class="logo">
-        ⚽ FUTBOL<span>MANÍA</span>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="javascript.html">JavaScript</a>
+      <a href="jquery.html">jQuery</a>
+      <a href="json.html">JSON</a>
+      <a href="hosting.html">Hosting</a>
+      <a href="cuestionario.html">Cuestionario</a>
     </div>
-
-    <p>Proyecto de Desarrollo Web © 2026</p>
-
+  </div>
 </footer>
 
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
 <script>
-
-$(document).ready(function(){
-
-    $("#boton").click(function(){
-
-        $("#pelota").slideToggle();
-
+  $(function () {
+    $('#demoJqueryBtn').on('click', function () {
+      $('#demoJqueryMessage').stop(true, true).slideToggle(250);
     });
-
-});
-
+  });
 </script>
-
 </body>
 </html>

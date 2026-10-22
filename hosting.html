@@ -1,293 +1,162 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Hosting y Dominios | FutbolManía</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Investigación sobre web hosting y dominios para publicar una página web.">
+  <meta name="theme-color" content="#07110d">
+  <title>Hosting y dominios | FUTBOLMANÍA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">⚽</span>
+      <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+    </a>
 
-<header class="header">
-
-    <div class="logo">
-        ⚽ FUTBOL<span>MANÍA</span>
-    </div>
-
-    <nav>
-
-        <a href="index.html">Inicio</a>
-
-        <a href="javascript.html">JavaScript</a>
-
-        <a href="jquery.html">jQuery</a>
-
-        <a href="json.html">JSON</a>
-
-        <a href="hosting.html">Hosting</a>
-
-        <a href="cuestionario.html">Quiz</a>
-
+    <nav class="nav-links" id="mainNav" aria-label="Navegación principal">
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="javascript.html">JavaScript</a>
+      <a href="jquery.html">jQuery</a>
+      <a href="json.html">JSON</a>
+      <a href="hosting.html" data-es="Hosting" data-en="Hosting">Hosting</a>
+      <a href="cuestionario.html" data-es="Cuestionario" data-en="Quiz">Cuestionario</a>
     </nav>
 
+    <div class="nav-actions">
+      <button class="icon-btn" id="languageBtn" type="button" aria-label="Cambiar idioma">EN</button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema">☀</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
 </header>
 
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <p class="mini-title">
-            🌐 INTERNET
-        </p>
-
-        <h1>
-            HOSTING
-            <span>Y DOMINIOS</span>
-        </h1>
-
-        <p>
-            Descubre cómo un sitio web puede pasar de estar
-            en tu computadora a estar disponible en Internet.
-        </p>
-
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">04 / PUBLICACIÓN WEB</span>
+      <h1>DEL CAMPO A <span class="accent">INTERNET</span></h1>
+      <p>Conoce el alojamiento web, los dominios y los pasos necesarios para que FUTBOLMANÍA pueda estar disponible en internet.</p>
     </div>
+  </section>
 
-</section>
-
-
-<section class="intro">
-
-    <p class="section-tag">WEB HOSTING</p>
-
-    <h2>¿Qué es Hosting?</h2>
-
-    <p class="description">
-
-        El Web Hosting es un servicio que permite almacenar
-        los archivos de un sitio web para que las personas
-        puedan acceder a él por Internet.
-
-    </p>
-
-
-    <div class="cards">
-
-        <div class="card">
-
-            <div class="icon">🖥️</div>
-
-            <h3>COMPARTIDO</h3>
-
-            <p>
-                Varios sitios utilizan recursos de un mismo servidor.
-            </p>
-
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">INVESTIGACIÓN</span>
+          <h2>¿CÓMO LLEGA TU WEB AL <span class="accent">MUNDO?</span></h2>
         </div>
+        <p>Una página web necesita archivos, un lugar donde alojarlos y una dirección para que las personas puedan visitarla fácilmente.</p>
+      </div>
 
+      <div class="cards">
+        <article class="card">
+          <div class="card-body">
+            <span class="tag">01 / ALOJAMIENTO</span>
+            <h3>Web Hosting</h3>
+            <p>Es un servicio que almacena los archivos de una página web y los entrega a los visitantes a través de internet.</p>
+            <ul>
+              <li>Guarda archivos HTML, CSS, JavaScript e imágenes.</li>
+              <li>Permite acceder al sitio desde otros dispositivos.</li>
+              <li>Puede ofrecer certificados SSL, estadísticas y otras herramientas.</li>
+            </ul>
+          </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
+          <div class="card-body">
+            <span class="tag">02 / DIRECCIÓN</span>
+            <h3>Nombre de dominio</h3>
+            <p>Es la dirección fácil de recordar que las personas escriben en el navegador para encontrar una página web.</p>
+            <ul>
+              <li>Ejemplo: futbolmania.com</li>
+              <li>Debe registrarse si está disponible.</li>
+              <li>Se conecta al servicio de alojamiento mediante la configuración DNS.</li>
+            </ul>
+          </div>
+        </article>
 
-            <div class="icon">⚙️</div>
-
-            <h3>VPS</h3>
-
-            <p>
-                Ofrece recursos propios dentro de un servidor.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">☁️</div>
-
-            <h3>NUBE</h3>
-
-            <p>
-                Utiliza varios servidores conectados.
-            </p>
-
-        </div>
-
+        <article class="card">
+          <div class="card-body">
+            <span class="tag">03 / PUBLICACIÓN</span>
+            <h3>Despliegue web</h3>
+            <p>Consiste en publicar los archivos del proyecto en una plataforma de alojamiento para que el público pueda visitar el sitio.</p>
+            <ul>
+              <li>Subir o conectar el proyecto.</li>
+              <li>Configurar la carpeta y los archivos necesarios.</li>
+              <li>Probar los enlaces, imágenes y funciones.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-</section>
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        <h2>¿Qué es Vercel?</h2>
+        <p>Vercel es una plataforma de despliegue web que permite publicar proyectos y obtener una dirección web para compartirlos. Puede conectarse con repositorios de código para facilitar las actualizaciones.</p>
 
+        <h2>Pasos para publicar FUTBOLMANÍA</h2>
+        <ol>
+          <li>Organiza los archivos HTML, CSS y JavaScript en una carpeta.</li>
+          <li>Prueba todas las páginas desde tu navegador.</li>
+          <li>Sube el proyecto a un repositorio Git o utiliza un método de despliegue compatible.</li>
+          <li>Importa el proyecto en Vercel y configura el despliegue.</li>
+          <li>Abre la dirección publicada y comprueba que todo funcione.</li>
+        </ol>
 
-<section class="producto">
+        <h2>¿Qué dominio elegir?</h2>
+        <p>El nombre debe ser breve, fácil de escribir y relacionado con el proyecto. Antes de comprarlo, comprueba si está disponible y revisa su precio de renovación.</p>
 
-    <div class="producto-info">
-
-        <p class="section-tag">VERCEL</p>
-
-        <h2>Publicar un sitio web</h2>
-
-        <p>
-            Vercel es una plataforma que permite desplegar
-            proyectos web y conectarlos con repositorios
-            de GitHub.
-        </p>
-
-
-        <div class="info-box">
-
-            <strong>📁 1. Proyecto</strong>
-
-            <p>
-                Creamos los archivos de nuestro sitio web.
-            </p>
-
+        <div class="notice">
+          Un dominio personalizado no siempre es necesario: algunas plataformas de alojamiento ofrecen una dirección gratuita para comenzar.
         </div>
+      </article>
 
+      <aside class="side-panel">
+        <span class="tag">CHECKLIST</span>
+        <h3>Antes de publicar</h3>
+        <ul class="check-list">
+          <li>Todos los archivos están guardados.</li>
+          <li>Los enlaces de navegación funcionan.</li>
+          <li>Las imágenes se muestran correctamente.</li>
+          <li>El sitio se adapta al móvil.</li>
+          <li>El formulario y el cuestionario se prueban.</li>
+        </ul>
 
-        <div class="info-box">
-
-            <strong>🐙 2. GitHub</strong>
-
-            <p>
-                Subimos nuestro proyecto a un repositorio.
-            </p>
-
-        </div>
-
-
-        <div class="info-box">
-
-            <strong>🚀 3. Vercel</strong>
-
-            <p>
-                Conectamos GitHub y publicamos el sitio.
-            </p>
-
-        </div>
-
+        <a class="btn btn-primary" href="cuestionario.html">Comprobar lo aprendido →</a>
+      </aside>
     </div>
+  </section>
+</main>
 
-
-    <div class="producto-info">
-
-        <p class="section-tag">DOMINIOS</p>
-
-        <h2>¿Qué es un dominio?</h2>
-
-        <p>
-            Es el nombre que las personas utilizan para
-            entrar a un sitio web.
-        </p>
-
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3>.COM</h3>
-
-                <p>
-                    Uso comercial.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>.ORG</h3>
-
-                <p>
-                    Organizaciones.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>.NET</h3>
-
-                <p>
-                    Redes.
-                </p>
-
-            </div>
-
-        </div>
-
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⚽</span>
+        <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+      </a>
+      <p>Fútbol, tecnología y pasión por el juego.</p>
     </div>
-
-</section>
-
-
-<section class="colores">
-
-    <p class="section-tag">DNS</p>
-
-    <h2>¿Cómo funciona el DNS?</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <div class="icon">🌐</div>
-            <h3>DOMINIO</h3>
-            <p>El usuario escribe el nombre del sitio.</p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🔎</div>
-            <h3>DNS</h3>
-            <p>Busca la dirección del servidor.</p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🖥️</div>
-            <h3>SERVIDOR</h3>
-            <p>Entrega los archivos de la página.</p>
-        </div>
-
-        <div class="card">
-            <div class="icon">⚽</div>
-            <h3>SITIO WEB</h3>
-            <p>La página aparece en el navegador.</p>
-        </div>
-
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="javascript.html">JavaScript</a>
+      <a href="jquery.html">jQuery</a>
+      <a href="json.html">JSON</a>
+      <a href="hosting.html">Hosting</a>
+      <a href="cuestionario.html">Cuestionario</a>
     </div>
-
-</section>
-
-
-<footer>
-
-    <div class="logo">
-        ⚽ FUTBOL<span>MANÍA</span>
-    </div>
-
-    <p>
-        Proyecto de Desarrollo Web © 2026
-    </p>
-
+  </div>
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>

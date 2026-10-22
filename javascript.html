@@ -1,279 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>JavaScript | FutbolManía</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Investigación educativa sobre JavaScript Vanilla y su uso en páginas web deportivas.">
+  <meta name="theme-color" content="#07110d">
+  <title>JavaScript | FUTBOLMANÍA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
-
-
 <body>
 
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="FUTBOLMANÍA inicio">
+      <span class="brand-mark">⚽</span>
+      <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+    </a>
 
-<header class="header">
-
-    <div class="logo">
-        ⚽ FUTBOL<span>MANÍA</span>
-    </div>
-
-    <nav>
-
-        <a href="index.html">Inicio</a>
-
-        <a href="javascript.html">JavaScript</a>
-
-        <a href="jquery.html">jQuery</a>
-
-        <a href="json.html">JSON</a>
-
-        <a href="hosting.html">Hosting</a>
-
-        <a href="cuestionario.html">Quiz</a>
-
+    <nav class="nav-links" id="mainNav" aria-label="Navegación principal">
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="javascript.html" data-es="JavaScript" data-en="JavaScript">JavaScript</a>
+      <a href="jquery.html" data-es="jQuery" data-en="jQuery">jQuery</a>
+      <a href="json.html" data-es="JSON" data-en="JSON">JSON</a>
+      <a href="hosting.html" data-es="Hosting" data-en="Hosting">Hosting</a>
+      <a href="cuestionario.html" data-es="Cuestionario" data-en="Quiz">Cuestionario</a>
     </nav>
 
+    <div class="nav-actions">
+      <button class="icon-btn" id="languageBtn" type="button" aria-label="Cambiar idioma">EN</button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema">☀</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
 </header>
 
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">01 / INTERACTIVIDAD</span>
+      <h1>JAVASCRIPT: <span class="accent">EL MOTOR</span> DE LA ACCIÓN</h1>
+      <p>JavaScript es un lenguaje de programación que permite agregar comportamiento e interactividad a una página web. En FUTBOLMANÍA puede controlar botones, cambiar el tema, alternar idiomas y validar respuestas.</p>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        <h2>¿Qué es JavaScript Vanilla?</h2>
+        <p>Se refiere al uso de JavaScript puro, sin depender de bibliotecas o frameworks externos. Trabaja junto con HTML y CSS para que la página responda a las acciones del usuario.</p>
 
-<section class="hero">
+        <h2>¿Cómo se utiliza?</h2>
+        <p>Puede escuchar eventos como clics, modificar el contenido del DOM, validar formularios, almacenar preferencias en el navegador y actualizar partes de una página.</p>
 
-    <div class="hero-content">
+        <h2>Ejemplo aplicado al fútbol</h2>
+        <p>En una página deportiva, JavaScript puede mostrar una tarjeta de un equipo al pulsar un botón, filtrar noticias o calcular la puntuación de un cuestionario.</p>
 
-        <p class="mini-title">
-            ⚡ TECNOLOGÍA WEB
-        </p>
+        <h2>Ejemplo práctico</h2>
+        <pre><code>const boton = document.querySelector('#miBoton');
 
-        <h1>
-            JAVASCRIPT
-            <span>EN ACCIÓN</span>
-        </h1>
+boton.addEventListener('click', () => {
+  alert('¡Vamos, equipo!');
+});</code></pre>
+
+        <div class="notice">
+          El código de ejemplo requiere un elemento HTML con id="miBoton" para funcionar.
+        </div>
+      </article>
+
+      <aside class="side-panel">
+        <span class="tag">GUÍA RÁPIDA</span>
+        <h3>¿Qué debes recordar?</h3>
+
+        <ul>
+          <li>Permite crear interacciones sin recargar toda la página.</li>
+          <li>Manipula el DOM para cambiar contenido y estilos.</li>
+          <li>Puede guardar preferencias usando localStorage.</li>
+        </ul>
+
+        <div class="info-list">
+          <div class="info-item">
+            <span class="info-icon">✓</span>
+            <div>
+              <strong>Concepto</strong><br>
+              <small>Comprende para qué sirve.</small>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">⌘</span>
+            <div>
+              <strong>Práctica</strong><br>
+              <small>Prueba el ejemplo en un proyecto.</small>
+            </div>
+          </div>
+        </div>
 
         <p>
-            JavaScript permite agregar comportamiento e
-            interactividad a las páginas web.
+          <a class="btn btn-primary" href="cuestionario.html">Ir al cuestionario →</a>
         </p>
+      </aside>
+    </div>
+  </section>
+</main>
 
-        <div class="buttons">
-
-            <a href="#contenido" class="btn">
-                APRENDER
-            </a>
-
-        </div>
-
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⚽</span>
+        <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+      </a>
+      <p data-es="Fútbol, tecnología y pasión por el juego." data-en="Football, technology and passion for the game.">Fútbol, tecnología y pasión por el juego.</p>
     </div>
 
-</section>
-
-
-
-<section id="contenido" class="intro">
-
-    <p class="section-tag">
-        JAVASCRIPT
-    </p>
-
-    <h2>¿Qué es JavaScript?</h2>
-
-    <p class="description">
-
-        JavaScript es un lenguaje de programación utilizado
-        para crear páginas web interactivas y dinámicas.
-
-    </p>
-
-
-
-    <div class="cards">
-
-
-        <div class="card">
-
-            <div class="icon">
-                🧱
-            </div>
-
-            <h3>HTML</h3>
-
-            <p>
-                Define la estructura de una página web.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">
-                🎨
-            </div>
-
-            <h3>CSS</h3>
-
-            <p>
-                Se utiliza para diseñar la página,
-                colores y apariencia.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <div class="icon">
-                ⚡
-            </div>
-
-            <h3>JavaScript</h3>
-
-            <p>
-                Agrega comportamiento e interacción.
-            </p>
-
-        </div>
-
-
+    <div class="footer-links">
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="javascript.html">JavaScript</a>
+      <a href="jquery.html">jQuery</a>
+      <a href="json.html">JSON</a>
+      <a href="hosting.html" data-es="Hosting" data-en="Hosting">Hosting</a>
+      <a href="cuestionario.html" data-es="Cuestionario" data-en="Quiz">Cuestionario</a>
     </div>
-
-</section>
-
-
-
-<section class="producto">
-
-    <div class="producto-info">
-
-        <p class="section-tag">
-            CONCEPTOS
-        </p>
-
-        <h2>
-            Conceptos básicos
-        </h2>
-
-
-        <div class="info-box">
-
-            <strong>📦 Variables</strong>
-
-            <p>
-                Guardan información que puede utilizar
-                el programa.
-            </p>
-
-        </div>
-
-
-        <div class="info-box">
-
-            <strong>⚙️ Funciones</strong>
-
-            <p>
-                Son bloques de código que realizan
-                una tarea.
-            </p>
-
-        </div>
-
-
-        <div class="info-box">
-
-            <strong>🖱️ Eventos</strong>
-
-            <p>
-                Son acciones como hacer clic o mover
-                el mouse.
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="producto-info">
-
-        <p class="section-tag">
-            EJEMPLO
-        </p>
-
-        <h2>
-            Código JavaScript
-        </h2>
-
-        <pre style="
-            background:#020806;
-            padding:30px;
-            border-radius:12px;
-            color:#20d68b;
-            overflow:auto;
-        "><code>
-function gol() {
-
-    alert("⚽ ¡GOOOOOOL!");
-
-}
-        </code></pre>
-
-
-        <button
-            onclick="gol()"
-            class="btn"
-            style="border:none; margin-top:20px; cursor:pointer;">
-
-            ⚽ HACER GOL
-
-        </button>
-
-    </div>
-
-</section>
-
-
-
-<footer>
-
-    <div class="logo">
-        ⚽ FUTBOL<span>MANÍA</span>
-    </div>
-
-    <p>
-        Proyecto de Desarrollo Web © 2026
-    </p>
-
+  </div>
 </footer>
 
-
-
-<script>
-
-function gol() {
-
-    alert("⚽ ¡GOOOOOOL! JavaScript funciona correctamente.");
-
-}
-
-</script>
-
-
+<script src="script.js"></script>
 </body>
 </html>

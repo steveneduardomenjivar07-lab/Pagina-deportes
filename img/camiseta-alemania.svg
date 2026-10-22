@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Camiseta blanca de Alemania</title>
+  <desc id="description">Camiseta de fútbol blanca con una franja negra, roja y dorada y el número 10.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#27362d"/>
+      <stop offset="1" stop-color="#0b1510"/>
+    </linearGradient>
+    <linearGradient id="fabric" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".55" stop-color="#ecefe9"/>
+      <stop offset="1" stop-color="#cbd2ce"/>
+    </linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".42"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#background)"/>
+  <circle cx="400" cy="295" r="255" fill="#19e879" opacity=".055"/>
+  <g filter="url(#shadow)">
+    <path d="M288 91 L352 67 Q400 108 448 67 L512 91 L646 160 L587 263 L529 235 L536 502 Q400 535 264 502 L271 235 L213 263 L154 160 Z" fill="url(#fabric)" stroke="#aeb8b2" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M352 67 Q400 108 448 67 L474 80 Q400 150 326 80 Z" fill="#171a19"/>
+    <path d="M326 80 Q400 150 474 80 L461 98 Q400 157 339 98 Z" fill="#d62525"/>
+    <path d="M339 98 Q400 157 461 98 L448 112 Q400 157 352 112 Z" fill="#e2b632"/>
+    <path d="M213 160 L271 183 L254 220 L196 199 Z M587 160 L529 183 L546 220 L604 199 Z" fill="#171a19"/>
+    <path d="M310 246 Q400 220 490 246 L484 286 Q400 267 316 286 Z" fill="#171a19" opacity=".92"/>
+    <path d="M316 286 Q400 267 484 286 L479 306 Q400 288 321 306 Z" fill="#d62525"/>
+    <path d="M321 306 Q400 288 479 306 L474 324 Q400 307 326 324 Z" fill="#e2b632"/>
+    <text x="400" y="421" fill="#171a19" font-family="Arial, sans-serif" font-size="118" font-weight="700" text-anchor="middle">10</text>
+    <circle cx="504" cy="179" r="36" fill="#fff" stroke="#222" stroke-width="4"/>
+    <path d="M504 151 L512 163 L526 159 L524 174 L537 181 L524 189 L526 204 L512 199 L504 212 L496 199 L482 204 L484 189 L471 181 L484 174 L482 159 L496 163 Z" fill="#171a19"/>
+  </g>
+  <text x="400" y="566" fill="#b5c5ba" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="5">DEUTSCHLAND</text>
+</svg>

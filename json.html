@@ -1,218 +1,196 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>JSON | FutbolManía</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende qué es JSON y cómo organizar datos en aplicaciones web deportivas.">
+  <meta name="theme-color" content="#07110d">
+  <title>JSON | FUTBOLMANÍA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">⚽</span>
+      <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+    </a>
 
-<header class="header">
-
-    <div class="logo">
-        ⚽ FUTBOL<span>MANÍA</span>
-    </div>
-
-    <nav>
-
-        <a href="index.html">Inicio</a>
-
-        <a href="javascript.html">JavaScript</a>
-
-        <a href="jquery.html">jQuery</a>
-
-        <a href="json.html">JSON</a>
-
-        <a href="hosting.html">Hosting</a>
-
-        <a href="cuestionario.html">Quiz</a>
-
+    <nav class="nav-links" id="mainNav" aria-label="Navegación principal">
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="javascript.html">JavaScript</a>
+      <a href="jquery.html">jQuery</a>
+      <a href="json.html">JSON</a>
+      <a href="hosting.html" data-es="Hosting" data-en="Hosting">Hosting</a>
+      <a href="cuestionario.html" data-es="Cuestionario" data-en="Quiz">Cuestionario</a>
     </nav>
 
+    <div class="nav-actions">
+      <button class="icon-btn" id="languageBtn" type="button" aria-label="Cambiar idioma">EN</button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema">☀</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
 </header>
 
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <p class="mini-title">
-            📦 INTERCAMBIO DE DATOS
-        </p>
-
-        <h1>
-            JSON
-            <span>DATOS EN ACCIÓN</span>
-        </h1>
-
-        <p>
-            JSON permite almacenar y enviar información
-            de una manera sencilla y organizada.
-        </p>
-
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">03 / ORGANIZACIÓN DE DATOS</span>
+      <h1>JSON: <span class="accent">DATOS EN JUEGO</span></h1>
+      <p>JSON significa JavaScript Object Notation. Es un formato de texto sencillo que permite representar e intercambiar información entre aplicaciones.</p>
     </div>
+  </section>
 
-</section>
+  <section class="section">
+    <div class="container content-grid">
+      <article class="prose">
+        <h2>¿Qué es JSON?</h2>
+        <p>JSON organiza información mediante pares de clave y valor, objetos y arreglos. Aunque su nombre incluye JavaScript, es un formato independiente que puede utilizarse con distintos lenguajes de programación.</p>
 
+        <h2>¿Para qué sirve?</h2>
+        <ul>
+          <li>Intercambiar datos entre un servidor y una página web.</li>
+          <li>Guardar información estructurada en archivos de texto.</li>
+          <li>Representar equipos, jugadores, resultados o noticias.</li>
+          <li>Facilitar el procesamiento de datos en aplicaciones.</li>
+        </ul>
 
-<section class="intro">
+        <h2>Ejemplo de datos futbolísticos</h2>
+        <pre><code>{
+  "equipo": "FUTBOLMANÍA FC",
+  "deporte": "Fútbol",
+  "fundado": 2026,
+  "activo": true,
+  "jugadores": [
+    "Carlos",
+    "Daniel",
+    "Miguel"
+  ]
+}</code></pre>
 
-    <p class="section-tag">JSON</p>
+        <p>En este ejemplo, las claves describen los datos. Los valores pueden ser textos, números, valores booleanos, objetos, arreglos o null.</p>
 
-    <h2>¿Qué significa JSON?</h2>
-
-    <p class="description">
-
-        JSON significa JavaScript Object Notation.
-        Es un formato utilizado para intercambiar datos
-        entre aplicaciones y servidores.
-
-    </p>
-
-
-    <div class="cards">
-
-        <div class="card">
-
-            <div class="icon">🔑</div>
-
-            <h3>CLAVE</h3>
-
-            <p>
-                Identifica el dato que queremos guardar.
-            </p>
-
+        <h2>Prueba un ejemplo interactivo</h2>
+        <div class="demo-box">
+          <p>Presiona el botón para leer un objeto JSON y mostrar los datos del equipo.</p>
+          <button class="btn btn-primary" id="jsonDemoBtn" type="button">Mostrar datos del equipo</button>
+          <div class="demo-message" id="jsonDemoOutput" aria-live="polite">
+            Aquí aparecerá la información del equipo.
+          </div>
         </div>
 
+        <h2>JSON y JavaScript</h2>
+        <p>JavaScript puede convertir un texto JSON en un objeto mediante <code>JSON.parse()</code> y convertir un objeto en texto JSON mediante <code>JSON.stringify()</code>.</p>
 
-        <div class="card">
+        <pre><code>const texto = '{"equipo":"FUTBOLMANÍA FC"}';
+const datos = JSON.parse(texto);
 
-            <div class="icon">📄</div>
+console.log(datos.equipo);</code></pre>
+      </article>
 
-            <h3>VALOR</h3>
+      <aside class="side-panel">
+        <span class="tag">CONCEPTOS CLAVE</span>
+        <h3>Estructura de JSON</h3>
 
-            <p>
-                Es la información asociada a una clave.
-            </p>
+        <div class="info-list">
+          <div class="info-item">
+            <span class="info-icon">{ }</span>
+            <div>
+              <strong>Objeto</strong><br>
+              <small>Agrupa pares de clave y valor.</small>
+            </div>
+          </div>
 
+          <div class="info-item">
+            <span class="info-icon">[ ]</span>
+            <div>
+              <strong>Arreglo</strong><br>
+              <small>Contiene una lista ordenada.</small>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">"</span>
+            <div>
+              <strong>Claves</strong><br>
+              <small>Se escriben entre comillas dobles.</small>
+            </div>
+          </div>
         </div>
 
-
-        <div class="card">
-
-            <div class="icon">📚</div>
-
-            <h3>ARREGLOS</h3>
-
-            <p>
-                Permiten almacenar varios valores.
-            </p>
-
+        <div class="notice">
+          JSON no permite comentarios y requiere comillas dobles para las claves y los textos.
         </div>
 
+        <a class="btn btn-primary" href="hosting.html">Siguiente: Hosting →</a>
+      </aside>
     </div>
+  </section>
+</main>
 
-</section>
-
-
-<section class="producto">
-
-    <div class="producto-info">
-
-        <p class="section-tag">EJEMPLO</p>
-
-        <h2>Datos de un jugador</h2>
-
-        <pre style="
-            background:#020806;
-            padding:30px;
-            border-radius:12px;
-            color:#20d68b;
-            overflow:auto;
-        "><code>
-{
-    "nombre": "Messi",
-    "edad": 39,
-    "equipo": "Inter Miami",
-    "posicion": "Delantero"
-}
-        </code></pre>
-
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⚽</span>
+        <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+      </a>
+      <p>Fútbol, tecnología y pasión por el juego.</p>
     </div>
-
-
-    <div class="producto-info">
-
-        <p class="section-tag">¿CÓMO FUNCIONA?</p>
-
-        <h2>JSON en una página web</h2>
-
-        <div class="info-box">
-
-            <strong>1. Usuario</strong>
-
-            <p>
-                El usuario solicita información.
-            </p>
-
-        </div>
-
-
-        <div class="info-box">
-
-            <strong>2. Servidor</strong>
-
-            <p>
-                El servidor procesa la información.
-            </p>
-
-        </div>
-
-
-        <div class="info-box">
-
-            <strong>3. JSON</strong>
-
-            <p>
-                Los datos pueden enviarse utilizando JSON.
-            </p>
-
-        </div>
-
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="javascript.html">JavaScript</a>
+      <a href="jquery.html">jQuery</a>
+      <a href="json.html">JSON</a>
+      <a href="hosting.html">Hosting</a>
+      <a href="cuestionario.html">Cuestionario</a>
     </div>
-
-</section>
-
-
-<footer>
-
-    <div class="logo">
-        ⚽ FUTBOL<span>MANÍA</span>
-    </div>
-
-    <p>Proyecto de Desarrollo Web © 2026</p>
-
+  </div>
 </footer>
 
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('jsonDemoBtn');
+    const output = document.getElementById('jsonDemoOutput');
 
+    if (!button || !output) return;
+
+    let datosMostrados = false;
+
+    function mostrarDatosEquipo() {
+      const textoJSON = '{"equipo":"FUTBOLMANÍA FC","deporte":"Fútbol","fundado":2026,"activo":true,"jugadores":["Carlos","Daniel","Miguel"]}';
+
+      try {
+        const equipo = JSON.parse(textoJSON);
+        const idiomaIngles = document.documentElement.lang === 'en';
+
+        output.innerHTML = `
+          <strong>${equipo.equipo}</strong>
+            <p>${idiomaIngles ? 'Sport' : 'Deporte'}: ${idiomaIngles ? 'Football' : equipo.deporte}</p>
+            <p>${idiomaIngles ? 'Founded' : 'Año de fundación'}: ${equipo.fundado}</p>
+            <p>${idiomaIngles ? 'Status' : 'Estado'}: ${idiomaIngles ? (equipo.activo ? 'Active' : 'Inactive') : (equipo.activo ? 'Activo' : 'Inactivo')}</p>
+            <p>${idiomaIngles ? 'Players' : 'Jugadores'}: ${equipo.jugadores.join(', ')}</p>
+        `;
+      } catch (error) {
+          output.textContent = document.documentElement.lang === 'en'
+            ? 'The JSON data could not be read.'
+            : 'No se pudieron leer los datos JSON.';
+      }
+    }
+
+    button.addEventListener('click', function () {
+      datosMostrados = true;
+      mostrarDatosEquipo();
+    });
+
+    document.addEventListener('futbolmania:languagechange', function () {
+      if (datosMostrados) mostrarDatosEquipo();
+    });
+  });
+</script>
 </body>
 </html>

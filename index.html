@@ -1,134 +1,246 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fútbol - Inicio</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FUTBOLMANÍA, una experiencia donde se unen el fútbol y la tecnología web.">
+  <meta name="theme-color" content="#07110d">
+  <title>Inicio | FUTBOLMANÍA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="header">
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="FUTBOLMANÍA inicio">
+      <span class="brand-mark">⚽</span>
+      <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+    </a>
 
-        <div class="logo">
-            ⚽ FUTBOLMANÍA
+    <nav class="nav-links" id="mainNav" aria-label="Navegación principal">
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="javascript.html" data-es="JavaScript" data-en="JavaScript">JavaScript</a>
+      <a href="jquery.html" data-es="jQuery" data-en="jQuery">jQuery</a>
+      <a href="json.html" data-es="JSON" data-en="JSON">JSON</a>
+      <a href="hosting.html" data-es="Hosting" data-en="Hosting">Hosting</a>
+      <a href="cuestionario.html" data-es="Cuestionario" data-en="Quiz">Cuestionario</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="languageBtn" type="button" aria-label="Cambiar idioma">EN</button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema">☀</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero match-carousel" data-carousel aria-label="Destacados de FUTBOLMANÍA" aria-roledescription="carrusel">
+    <div class="carousel-slides">
+      <article class="carousel-slide is-active" data-carousel-slide aria-hidden="false" role="group" aria-roledescription="diapositiva" aria-label="1 de 3">
+        <img class="carousel-image" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=2200&q=85" alt="Cancha de fútbol preparada para un partido">
+        <div class="container hero-content carousel-content">
+          <span class="eyebrow" data-es="FUTBOLMANÍA / EL JUEGO" data-en="FUTBOLMANÍA / THE GAME">FUTBOLMANÍA / EL JUEGO</span>
+          <h1><span data-es="FÚTBOL Y" data-en="FOOTBALL AND">FÚTBOL Y</span><br><span class="accent" data-es="TECNOLOGÍA" data-en="TECHNOLOGY">TECNOLOGÍA</span></h1>
+          <p class="lead" data-es="La pasión por la cancha también se vive detrás de cada página web." data-en="The passion for the pitch lives behind every website, too.">La pasión por la cancha también se vive detrás de cada página web.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#explora" data-es="Explorar el sitio ↓" data-en="Explore the site ↓">Explorar el sitio ↓</a>
+            <a class="btn btn-secondary" href="cuestionario.html" data-es="Ir al cuestionario" data-en="Take the quiz">Ir al cuestionario</a>
+          </div>
         </div>
+      </article>
 
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="javascript.html">JavaScript</a>
-            <a href="jquery.html">jQuery</a>
-            <a href="json.html">JSON</a>
-            <a href="hosting.html">Hosting</a>
-            <a href="cuestionario.html">Quiz</a>
-
-            <!-- BOTÓN MODO -->
-            <button id="themeToggle">☀️ Claro</button>
-        </nav>
-
-    </header>
-
-
-    <!-- INICIO -->
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <h1>EL MUNDO DEL FÚTBOL</h1>
-
-            <p>
-                Descubre información, tecnología, equipos,
-                jugadores y mucho más sobre el deporte más popular del mundo.
-            </p>
-
-            <a href="#contenido" class="btn">
-                EXPLORAR
-            </a>
-
+      <article class="carousel-slide" data-carousel-slide aria-hidden="true" role="group" aria-roledescription="diapositiva" aria-label="2 de 3" inert>
+        <img class="carousel-image" src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=2200&q=85" alt="Jugadores disputando un partido de fútbol" loading="lazy">
+        <div class="container hero-content carousel-content">
+          <span class="eyebrow" data-es="FUTBOLMANÍA / DATOS" data-en="FUTBOLMANÍA / DATA">FUTBOLMANÍA / DATOS</span>
+          <h2><span data-es="CADA JUGADA" data-en="EVERY PLAY">CADA JUGADA</span><br><span class="accent" data-es="CUENTA" data-en="COUNTS">CUENTA</span></h2>
+          <p class="lead" data-es="Descubre cómo JavaScript y JSON dan vida a las experiencias digitales." data-en="See how JavaScript and JSON bring digital experiences to life.">Descubre cómo JavaScript y JSON dan vida a las experiencias digitales.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="javascript.html" data-es="Explorar JavaScript →" data-en="Explore JavaScript →">Explorar JavaScript →</a>
+          </div>
         </div>
+      </article>
 
-    </section>
+      <article class="carousel-slide" data-carousel-slide aria-hidden="true" role="group" aria-roledescription="diapositiva" aria-label="3 de 3" inert>
+        <img class="carousel-image" src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=2200&q=85" alt="Estadio de fútbol iluminado durante un partido" loading="lazy">
+        <div class="container hero-content carousel-content">
+          <span class="eyebrow" data-es="FUTBOLMANÍA / PUBLICACIÓN" data-en="FUTBOLMANÍA / PUBLISHING">FUTBOLMANÍA / PUBLICACIÓN</span>
+          <h2><span data-es="DEL PROYECTO" data-en="FROM PROJECT">DEL PROYECTO</span><br><span class="accent" data-es="A LA CANCHA" data-en="TO THE PITCH">A LA CANCHA</span></h2>
+          <p class="lead" data-es="Aprende lo necesario para publicar tu sitio y compartirlo con todos." data-en="Learn what it takes to publish your site and share it with everyone.">Aprende lo necesario para publicar tu sitio y compartirlo con todos.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="hosting.html" data-es="Cómo publicar mi web →" data-en="How to publish my site →">Cómo publicar mi web →</a>
+          </div>
+        </div>
+      </article>
+    </div>
 
+    <div class="carousel-controls" aria-label="Controles del carrusel">
+      <div class="carousel-pagination">
+        <button class="carousel-dot is-active" type="button" data-carousel-go="0" aria-label="Ir a la diapositiva 1" aria-pressed="true"></button>
+        <button class="carousel-dot" type="button" data-carousel-go="1" aria-label="Ir a la diapositiva 2" aria-pressed="false"></button>
+        <button class="carousel-dot" type="button" data-carousel-go="2" aria-label="Ir a la diapositiva 3" aria-pressed="false"></button>
+        <span class="carousel-count" data-carousel-count aria-hidden="true">01 / 03</span>
+      </div>
+      <div class="carousel-arrows">
+        <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Diapositiva anterior">←</button>
+        <button class="carousel-arrow" type="button" data-carousel-next aria-label="Diapositiva siguiente">→</button>
+      </div>
+    </div>
+  </section>
 
-    <!-- CONTENIDO -->
-    <section id="contenido" class="contenido">
-
-        <h2>FÚTBOL Y TECNOLOGÍA</h2>
-
-        <p class="descripcion">
-            En este sitio conocerás cómo las tecnologías web pueden utilizarse
-            para crear una página interactiva relacionada con el fútbol.
+  <section class="section" id="explora">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-es="Explora y aprende" data-en="Explore and learn">Explora y aprende</span>
+          <h2 data-es="EL JUEGO Y LA <span class='accent'>TECNOLOGÍA</span>" data-en="THE GAME AND <span class='accent'>TECHNOLOGY</span>">
+            EL JUEGO Y LA <span class="accent">TECNOLOGÍA</span>
+          </h2>
+        </div>
+        <p data-es="Descubre cómo las tecnologías web hacen que las páginas deportivas sean dinámicas, útiles y atractivas." data-en="Discover how web technologies make sports websites dynamic, useful and engaging.">
+          Descubre cómo las tecnologías web hacen que las páginas deportivas sean dinámicas, útiles y atractivas.
         </p>
+      </div>
 
+      <div class="cards">
+        <article class="card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=80')"></div>
+          <div class="card-body">
+            <span class="tag">01 / JAVASCRIPT</span>
+            <h3 data-es="Interactividad en la cancha" data-en="On-field interactivity">Interactividad en la cancha</h3>
+            <p data-es="Aprende cómo JavaScript permite responder a clics, validar formularios y actualizar contenido." data-en="Learn how JavaScript responds to clicks, validates forms and updates content.">Aprende cómo JavaScript permite responder a clics, validar formularios y actualizar contenido.</p>
+            <a class="btn btn-secondary" href="javascript.html" data-es="Descubrir →" data-en="Discover →">Descubrir →</a>
+          </div>
+        </article>
 
-        <div class="cards">
+        <article class="card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=80')"></div>
+          <div class="card-body">
+            <span class="tag">02 / JQUERY</span>
+            <h3 data-es="Efectos y acciones rápidas" data-en="Effects and quick actions">Efectos y acciones rápidas</h3>
+            <p data-es="Conoce una biblioteca que simplifica tareas comunes de JavaScript y los efectos visuales." data-en="Explore a library that simplifies common JavaScript tasks and visual effects.">Conoce una biblioteca que simplifica tareas comunes de JavaScript y los efectos visuales.</p>
+            <a class="btn btn-secondary" href="jquery.html" data-es="Descubrir →" data-en="Discover →">Descubrir →</a>
+          </div>
+        </article>
 
-            <div class="card">
+        <article class="card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=80')"></div>
+          <div class="card-body">
+            <span class="tag">03 / DATOS Y WEB</span>
+            <h3 data-es="Datos y publicación" data-en="Data and publishing">Datos y publicación</h3>
+            <p data-es="Explora JSON, hosting y dominios para organizar datos y publicar tu sitio en internet." data-en="Explore JSON, hosting and domains to organize data and publish your website online.">Explora JSON, hosting y dominios para organizar datos y publicar tu sitio en internet.</p>
+            <a class="btn btn-secondary" href="json.html" data-es="Descubrir →" data-en="Discover →">Descubrir →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-                <div class="icono">⚽</div>
-
-                <h3>Fútbol</h3>
-
-                <p>
-                    Información sobre el deporte, equipos,
-                    jugadores y estadísticas.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="icono">💻</div>
-
-                <h3>JavaScript</h3>
-
-                <p>
-                    Tecnología utilizada para agregar
-                    interactividad a nuestro sitio web.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="icono">🌐</div>
-
-                <h3>Web</h3>
-
-                <p>
-                    Conoce tecnologías como JSON, jQuery
-                    y servicios de hosting.
-                </p>
-
-            </div>
-
+  <section class="section shop-section" id="tienda">
+    <div class="container">
+      <div class="section-head shop-heading">
+        <div>
+          <span class="eyebrow" data-es="EQUÍPATE PARA JUGAR" data-en="GEAR UP TO PLAY">EQUÍPATE PARA JUGAR</span>
+          <h2 data-es="TIENDA <span class='accent'>DEPORTIVA</span>" data-en="SPORTS <span class='accent'>SHOP</span>">TIENDA <span class="accent">DEPORTIVA</span></h2>
         </div>
+        <div class="shop-tools">
+          <span class="cart-count" aria-live="polite"><span data-es="Carrito" data-en="Cart">Carrito</span> <strong data-cart-count>0</strong></span>
+          <div class="shop-arrows" aria-label="Controles de productos">
+            <button class="shop-arrow" type="button" data-shop-prev aria-label="Productos anteriores">←</button>
+            <button class="shop-arrow" type="button" data-shop-next aria-label="Productos siguientes">→</button>
+          </div>
+        </div>
+      </div>
 
-    </section>
+      <div class="product-gallery">
+        <div class="product-gallery-track" data-product-gallery aria-label="Productos destacados"></div>
+      </div>
 
+      <div class="product-grid" data-product-track aria-label="Productos deportivos">
+        <article class="product-card">
+          <div class="product-image-wrap"><img src="img/botines.jpeg" alt="Botines Nike y Adidas Predator" loading="lazy"><span class="product-badge" data-es="MÁS VENDIDO" data-en="BESTSELLER">MÁS VENDIDO</span></div>
+          <div class="product-info"><span class="product-category" data-es="FÚTBOL / CALZADO" data-en="FOOTBALL / FOOTWEAR">FÚTBOL / CALZADO</span><h3 data-es="Botines Nike y Adidas Predator" data-en="Nike and Adidas Predator boots">Botines Nike y Adidas Predator</h3><p data-es="Agarre firme para césped natural." data-en="Reliable grip for natural grass.">Agarre firme para césped natural.</p><div class="product-buy"><strong>$64.99</strong><button class="add-to-cart" type="button" data-add-cart data-product-name="Botines Nike y Adidas Predator" data-product-name-en="Nike and Adidas Predator boots" data-es="Agregar" data-en="Add">Agregar</button></div></div>
+        </article>
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
+        <article class="product-card">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=800&q=85" alt="Balón de fútbol sobre el césped" loading="lazy"><span class="product-badge" data-es="ENTRENAMIENTO" data-en="TRAINING">ENTRENAMIENTO</span></div>
+          <div class="product-info"><span class="product-category" data-es="FÚTBOL / BALONES" data-en="FOOTBALL / BALLS">FÚTBOL / BALONES</span><h3 data-es="Balón de partido" data-en="Match football">Balón de partido</h3><p data-es="Costura resistente y toque suave." data-en="Durable stitching and a soft touch.">Costura resistente y toque suave.</p><div class="product-buy"><strong>$32.00</strong><button class="add-to-cart" type="button" data-add-cart data-product-name="Balón de partido" data-product-name-en="Match football" data-es="Agregar" data-en="Add">Agregar</button></div></div>
+        </article>
 
-        <p>
-            © 2026 FUTBOLMANÍA | Proyecto Web
-        </p>
+        <article class="product-card">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=85" alt="Uniforme deportivo en acción" loading="lazy"><span class="product-badge" data-es="NUEVO" data-en="NEW">NUEVO</span></div>
+          <div class="product-info"><span class="product-category" data-es="FÚTBOL / UNIFORMES" data-en="FOOTBALL / KITS">FÚTBOL / UNIFORMES</span><h3 data-es="Camiseta local" data-en="Home jersey">Camiseta local</h3><p data-es="Tela ligera para jugar o alentar." data-en="Lightweight fabric for play or match day.">Tela ligera para jugar o alentar.</p><div class="product-buy"><strong>$45.00</strong><button class="add-to-cart" type="button" data-add-cart data-product-name="Camiseta local" data-product-name-en="Home jersey" data-es="Agregar" data-en="Add">Agregar</button></div></div>
+        </article>
 
-    </footer>
+        <article class="product-card">
+          <div class="product-image-wrap"><img src="https://www.guantesdearquero.com/wp-content/uploads/2024/10/guantes-courtois.webp" alt="Guantes de arquero" loading="lazy"><span class="product-badge" data-es="ARQUEROS" data-en="GOALKEEPERS">ARQUEROS</span></div>
+          <div class="product-info"><span class="product-category" data-es="FÚTBOL / PROTECCIÓN" data-en="FOOTBALL / PROTECTION">FÚTBOL / PROTECCIÓN</span><h3 data-es="Guantes de arquero" data-en="Goalkeeper gloves">Guantes de arquero</h3><p data-es="Palma con buen agarre y ajuste seguro." data-en="Grippy palms and a secure fit.">Palma con buen agarre y ajuste seguro.</p><div class="product-buy"><strong>$28.50</strong><button class="add-to-cart" type="button" data-add-cart data-product-name="Guantes de arquero" data-product-name-en="Goalkeeper gloves" data-es="Agregar" data-en="Add">Agregar</button></div></div>
+        </article>
 
+        <article class="product-card">
+          <div class="product-image-wrap"><img src="img/espinillera .jpeg" alt="Espinilleras Nike negras" loading="lazy"><span class="product-badge" data-es="ENTRENAMIENTO" data-en="TRAINING">ENTRENAMIENTO</span></div>
+          <div class="product-info"><span class="product-category" data-es="FÚTBOL / PROTECCIÓN" data-en="FOOTBALL / PROTECTION">FÚTBOL / PROTECCIÓN</span><h3 data-es="Espinilleras Nike" data-en="Nike shin guards">Espinilleras Nike</h3><p data-es="Protección ligera para cada partido." data-en="Lightweight protection for every match.">Protección ligera para cada partido.</p><div class="product-buy"><strong>$18.00</strong><button class="add-to-cart" type="button" data-add-cart data-product-name="Espinilleras Nike" data-product-name-en="Nike shin guards" data-es="Agregar" data-en="Add">Agregar</button></div></div>
+        </article>
 
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+        <article class="product-card">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=85" alt="Mochila deportiva" loading="lazy"><span class="product-badge" data-es="LISTO PARA SALIR" data-en="READY TO GO">LISTO PARA SALIR</span></div>
+          <div class="product-info"><span class="product-category" data-es="ACCESORIOS / BOLSOS" data-en="ACCESSORIES / BAGS">ACCESORIOS / BOLSOS</span><h3 data-es="Mochila de entrenamiento" data-en="Training backpack">Mochila de entrenamiento</h3><p data-es="Espacio para tus botas y equipo." data-en="Room for your boots and gear.">Espacio para tus botas y equipo.</p><div class="product-buy"><strong>$39.00</strong><button class="add-to-cart" type="button" data-add-cart data-product-name="Mochila de entrenamiento" data-product-name-en="Training backpack" data-es="Agregar" data-en="Add">Agregar</button></div></div>
+        </article>
+      </div>
+      <p class="shop-note" data-es="Productos de muestra para el proyecto FUTBOLMANÍA." data-en="Sample products for the FUTBOLMANÍA project.">Productos de muestra para el proyecto FUTBOLMANÍA.</p>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="container">
+      <div class="feature-strip">
+        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1100&q=85" alt="Fotografía de una cancha de fútbol iluminada por reflectores" loading="lazy">
+
+        <div class="feature-copy">
+          <span class="eyebrow" data-es="Nuestro concepto" data-en="Our concept">Nuestro concepto</span>
+          <h2 data-es="MÁS QUE UN <span class='accent'>DEPORTE</span>" data-en="MORE THAN A <span class='accent'>SPORT</span>">MÁS QUE UN <span class="accent">DEPORTE</span></h2>
+          <p data-es="FUTBOLMANÍA combina la energía del fútbol con recursos de desarrollo web. El objetivo es presentar información de forma clara, visual e interactiva." data-en="FUTBOLMANÍA combines football energy with web development resources. The goal is to present information clearly, visually and interactively.">
+            FUTBOLMANÍA combina la energía del fútbol con recursos de desarrollo web. El objetivo es presentar información de forma clara, visual e interactiva.
+          </p>
+
+          <div class="pill-list">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">jQuery</span>
+            <span class="pill">JSON</span>
+          </div>
+
+          <a class="btn btn-primary" href="hosting.html" data-es="Cómo publicar mi web →" data-en="How to publish my site →">Cómo publicar mi web →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⚽</span>
+        <span class="brand-name">FUTBOL<span>MANÍA</span></span>
+      </a>
+      <p data-es="Fútbol, tecnología y pasión por el juego." data-en="Football, technology and passion for the game.">Fútbol, tecnología y pasión por el juego.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="javascript.html">JavaScript</a>
+      <a href="jquery.html">jQuery</a>
+      <a href="json.html">JSON</a>
+      <a href="hosting.html" data-es="Hosting" data-en="Hosting">Hosting</a>
+      <a href="cuestionario.html" data-es="Cuestionario" data-en="Quiz">Cuestionario</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>

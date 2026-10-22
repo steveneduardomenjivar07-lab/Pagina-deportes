@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Botines Nike y Adidas Predator</title>
+  <desc id="description">Dos botines de fútbol: uno Nike naranja y uno Adidas Predator negro con detalles rojos.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#27362d"/>
+      <stop offset="1" stop-color="#0b1510"/>
+    </linearGradient>
+    <linearGradient id="nikeUpper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff7447"/>
+      <stop offset="1" stop-color="#c92716"/>
+    </linearGradient>
+    <linearGradient id="predatorUpper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#454a46"/>
+      <stop offset="1" stop-color="#101411"/>
+    </linearGradient>
+    <filter id="shadow" x="-.2" y="-.3" width="1.5" height="1.7">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="9"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".45"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#background)"/>
+  <circle cx="400" cy="280" r="245" fill="#19e879" opacity=".055"/>
+  <g filter="url(#shadow)" stroke-linejoin="round">
+    <g transform="translate(20 38) rotate(-8 360 180)">
+      <path d="M106 210 Q143 184 190 163 L300 108 Q322 96 344 113 L401 154 Q430 174 470 177 L625 187 Q655 190 680 212 L715 250 Q726 264 711 275 Q686 294 637 299 L238 313 Q180 312 129 292 L93 276 Q77 267 86 250 Z" fill="url(#nikeUpper)" stroke="#ff9b76" stroke-width="5"/>
+      <path d="M95 265 Q169 290 246 288 L638 274 Q687 272 716 252 L721 270 Q720 292 687 304 Q656 315 620 316 L224 329 Q163 328 117 306 L91 293 Q77 283 95 265Z" fill="#171b18" stroke="#68716b" stroke-width="4"/>
+      <path d="M262 199 Q317 163 378 171 Q405 175 424 192 Q387 190 357 216 Q329 241 294 248 Q316 218 337 207 Q302 211 262 231 Q282 207 313 192 Q289 193 262 199Z" fill="#f6fff8"/>
+      <path d="M340 115 L365 150 M362 106 L390 153 M384 109 L414 161 M405 121 L435 168" stroke="#ffd0b9" stroke-width="5" opacity=".8"/>
+      <path d="M177 305 l-8 25 M260 309 l-6 26 M365 306 l-3 27 M477 302 l-1 28 M587 297 l4 27 M661 289 l11 24" stroke="#c4cec7" stroke-width="7" stroke-linecap="round"/>
+      <path d="M205 145 L229 178 M227 134 L251 167 M249 123 L273 156 M271 113 L295 146" stroke="#f8c4af" stroke-width="5"/>
+    </g>
+    <g transform="translate(30 235) rotate(7 360 180)">
+      <path d="M100 204 Q135 178 181 158 L292 104 Q315 93 337 110 L396 150 Q427 169 465 172 L624 181 Q658 183 682 207 L718 245 Q731 259 716 273 Q690 293 642 297 L235 315 Q178 315 128 294 L91 278 Q76 269 85 250 Z" fill="url(#predatorUpper)" stroke="#7d8981" stroke-width="5"/>
+      <path d="M93 267 Q168 291 244 290 L643 273 Q690 271 718 250 L724 270 Q722 291 687 304 Q654 315 619 317 L226 332 Q165 330 116 308 L88 294 Q76 283 93 267Z" fill="#151a17" stroke="#87918b" stroke-width="4"/>
+      <path d="M290 179 L370 139 M302 198 L388 155 M316 218 L405 171" stroke="#f5fff8" stroke-width="13" stroke-linecap="round"/>
+      <path d="M443 183 Q483 190 522 188 L629 196 L646 221 Q590 229 529 219 L458 208Z" fill="#d62925"/>
+      <path d="M330 111 L356 146 M352 103 L379 148 M374 107 L402 153 M396 118 L423 161" stroke="#b6c0b9" stroke-width="5"/>
+      <path d="M199 307 l-8 25 M279 310 l-5 26 M383 307 l-2 27 M491 302 l2 28 M595 297 l6 27 M665 287 l12 24" stroke="#c4cec7" stroke-width="7" stroke-linecap="round"/>
+      <path d="M193 144 Q222 127 249 117" fill="none" stroke="#ec3c34" stroke-width="8"/>
+    </g>
+  </g>
+  <rect x="120" y="514" width="230" height="44" rx="22" fill="#0a110d" opacity=".86"/>
+  <text x="235" y="543" fill="#f5fff8" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">NIKE</text>
+  <rect x="450" y="514" width="230" height="44" rx="22" fill="#0a110d" opacity=".86"/>
+  <text x="565" y="543" fill="#f5fff8" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">ADIDAS PREDATOR</text>
+</svg>
